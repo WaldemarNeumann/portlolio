@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+body,
+html {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: black;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    // overflow-x: hidden;
+    height: 100%;
+    /* width */
+    //  ::-webkit-scrollbar {
+    //     width: 12px;
+    // }
+    // /* Track */
+    //  ::-webkit-scrollbar-track {
+    //     background: #f1f1f1;
+    // }
+    // /* Handle */
+    //  ::-webkit-scrollbar-thumb {
+    //     background: #2BBBAD;
+    //     border-radius: 10px;
+    // }
+    // /* Handle on hover */
+    //  ::-webkit-scrollbar-thumb:hover {
+    //     background: #2DFCD8;
+    // }
+}
+
+.body,
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+.padding {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.btnActiv {
+    background-color: #FA2759 !important;
+}

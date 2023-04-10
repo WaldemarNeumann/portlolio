@@ -1,0 +1,173 @@
+.my-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        color: white;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 575px) {
+            font-size: 48px;
+        }
+        @media (max-width: 480px) {
+            font-size: 40px;
+        }
+    }
+    .btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 12px;
+        button {
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border: solid 2px #FA2759;
+            min-width: 150px;
+            padding: 10px;
+            margin: 10px;
+            &:hover {
+                background-color: #FA2759;
+            }
+            @media (max-width: 570px) {
+                font-size: 14px;
+                min-width: 120px;
+            }
+            @media (max-width: 440px) {
+                font-size: 14px;
+                min-width: 90px;
+                padding: 5px;
+            }
+        }
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+        max-width: 1200px;
+        @media (max-width: 1020px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        img {
+            object-fit: contain;
+            max-width: 100%;
+            width: 450px;
+            display: block;
+            @media (max-width: 1200px) {
+                width: 400px;
+            }
+        }
+        .projects-container {
+            padding: 30px;
+            @media (max-width: 1020px) {
+                padding: 50px;
+            }
+            @media (max-width: 520px) {
+                padding: 10px;
+                margin-bottom: 50px;
+            }
+        }
+        .projects-hover {
+            position: relative;
+        }
+        .projekt-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            flex-wrap: wrap;
+            overflow: hidden;
+            padding: var(--space-m);
+            background-color: rgb(254, 254, 254, 0.9);
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+            }
+            .title {
+                padding-top: 20px;
+                font-weight: 900;
+                font-size: 25px;
+                color: #FA2759;
+                display: flex;
+                justify-content: center;
+                @media (max-width: 900px) {
+                    padding-top: 20px;
+                    font-size: 20px;
+                }
+                @media (max-width: 520px) {
+                    padding-top: 20px;
+                    font-size: 18px;
+                }
+                @media (max-width: 400px) {
+                    padding-top: 15px;
+                }
+            }
+            p {
+                padding-left: 50px;
+                padding-right: 20px;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                max-width: 420px;
+                @media (max-width: 1200px) {
+                    font-size: 17px;
+                }
+                @media (max-width: 650px) {
+                    font-size: 16px;
+                }
+                @media (max-width: 480px) {
+                    font-size: 17px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                @media (max-width: 480px) {
+                    font-size: 15px;
+                }
+            }
+            button {
+                height: 50px;
+                width: 120px;
+                color: #FA2759;
+                border: solid 2px #FA2759;
+                font-size: 18px;
+                position: absolute;
+                bottom: 20px;
+                right: 50px;
+                &:hover {
+                    background-color: #FA2759;
+                    color: white;
+                }
+                @media (max-width: 1200px) {
+                    height: 45px;
+                }
+                @media (max-width: 900px) {
+                    height: 40px;
+                    width: 100px;
+                }
+                @media (max-width: 575px) {
+                    bottom: 30px;
+                    height: 40px;
+                    width: 140px;
+                }
+                @media (max-width: 480px) {
+                    height: 35px;
+                    width: 75px;
+                    bottom: 10px;
+                    font-size: 15px;
+                }
+            }
+            .project-btn {
+                display: flex;
+            }
+        }
+    }
+    .git {
+        position: absolute;
+        left: 50px;
+    }
+}
