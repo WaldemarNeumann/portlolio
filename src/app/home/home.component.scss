@@ -1,9 +1,21 @@
 .home {
     display: flex;
     flex-direction: column;
+    background-color: black;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    @media (max-width: 546px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media (max-width: 379px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     img {
-        width: 350px;
-        height: 350px;
+        width: 450px;
+        height: 450px;
         border-radius: 100%;
     }
 }
@@ -12,6 +24,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 900px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        margin-left: 40px;
+        width: 400px !important;
+        height: 400px !important;
+        @media (max-width: 1300px) {
+            width: 300px !important;
+            height: 300px !important;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 900px) {
+            margin-left: 0px;
+            width: 250px !important;
+            height: 250px !important;
+        }
+        @media (max-width: 280px) {
+            margin-left: 0px;
+            width: 180px !important;
+            height: 180px !important;
+        }
+    }
 }
 
 .homeArrow {
@@ -28,11 +65,32 @@
 
 .homeText {
     color: white;
+    @media (max-width: 900px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     p {
         font-size: 64px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 50px;
         font-weight: 700;
+        @media (max-width: 1230px) {
+            font-size: 50px;
+        }
+        @media (max-width: 1040px) {
+            font-size: 38px;
+        }
+        @media (max-width: 640px) {
+            font-size: 30px;
+        }
+        @media (max-width: 546px) {
+            font-size: 24px;
+        }
+        @media (max-width: 300px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -40,6 +98,9 @@
     font-size: 24px;
     color: #2DFCD8 !important;
     cursor: pointer;
+    @media (max-width: 546px) {
+        font-size: 18px;
+    }
 }
 
 button {
@@ -49,6 +110,13 @@ button {
     background-color: black;
     border: solid 2px #2DFCD8;
     border-radius: 5px;
+    @media (max-width: 1230px) {
+        margin-top: 0px;
+    }
+    @media (max-width: 546px) {
+        height: 50px;
+        width: 200px;
+    }
     &:hover {
         background-color: #2DFCD8;
         color: black !important;
@@ -61,15 +129,4 @@ button {
 
 .e {
     color: #2DFCD8;
-}
-
-.arrow {
-    padding-top: 55px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    img {
-        height: 70px;
-        animation: pulse 2s infinite;
-    }
 }

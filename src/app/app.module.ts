@@ -14,6 +14,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactComponent } from './contact/contact.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FooterComponent } from './footer/footer.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { ProjectsComponent } from './projects/projects.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +29,14 @@ import { MyWorkComponent } from './my-work/my-work.component';
     HeaderComponent,
     HomeComponent,
     MySkillsComponent,
-    MyWorkComponent
+    MyWorkComponent,
+    AboutMeComponent,
+    ContactComponent,
+    FooterComponent,
+    DataProtectionComponent,
+    ImpressumComponent,
+    ProjectsComponent,
+ 
   ],
   imports: [
  
@@ -33,6 +48,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
     MatInputModule,
     MatButtonModule, 
     MatMenuModule,
+    MatSnackBarModule,
     MatIconModule
   ],
   providers: [],

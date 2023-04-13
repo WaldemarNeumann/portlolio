@@ -1,16 +1,39 @@
 .header {
     margin: 0;
-    height: 200px;
+    height: 79px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    @media (max-width: 900px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media (max-width: 430px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     img {
-        width: 76px;
-        height: 76px;
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        @media (max-width: 280px) {
+            width: 45px;
+            height: 45px;
+        }
     }
 }
 
+.d-none {
+    display: none;
+}
+
 .neaderMenu {
+    @media (max-width: 900px) {
+        display: none;
+    }
     a {
         text-decoration: none;
         color: white;
@@ -20,5 +43,80 @@
     }
     a:hover {
         color: #F34E4E;
+    }
+}
+
+.menu {
+    display: none;
+    @media (max-width: 900px) {
+        display: flex;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+        @media (max-width: 280px) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.bobileLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 20px;
+        border-bottom: 2px solid transparent;
+        transition: all 225ms ease-in-out;
+    }
+    a:hover {
+        border-bottom: 2px solid white;
+        transition: all 225ms ease-in-out;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.show-overlay-menu {
+    transform: translate(0) !important;
+}
+
+.overlay-menu {
+    background: linear-gradient(180deg, black, 20%, #1e1e1e, 80%, #4b4b4b);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 30;
+    flex-direction: column;
+    width: 140px;
+    height: 100vh;
+    border-left: 1px solid black;
+    transform: translate(251px);
+    transition: all 225ms ease-in-out;
+    display: none;
+    @media (max-width: 900px) {
+        display: flex;
+    }
+    @media (max-width: 500px) {
+        width: 105px;
     }
 }

@@ -45,6 +45,10 @@ export class MySkillsComponent implements OnInit {
     {
       img: './assets/img/databases.png',
       title: 'Databases',
+    },
+    {
+      img: './assets/img/images.png',
+      title: 'Material Designe',
     }
 
     

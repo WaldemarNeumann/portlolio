@@ -1,0 +1,24 @@
+<div id="contact" class="contact">
+
+    <div class="contactDiv" data-aos="fade-right" data-aos-easing="ease-out-cubic">
+        <div>
+            <h1>Contact me</h1>
+            <h3>Get in touch via the from bellow, or by emailing <b class="contactMail">waldemar_neumann@gmx.de</b>.</h3>
+        </div>
+
+        <form (submit)="sendMail()" ngNativeValidate #myForm class="contactForm">
+
+            <p>Name</p>
+            <input matInput required type="text" name="name" #nameField placeholder="Enter your name *">
+
+            <p>Email address</p>
+            <input pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" matInput email="email" #emailField placeholder="Enter your Email address *" required>
+
+            <p>Message</p>
+            <input matInput required type="text" message="message" #messageField class="message" placeholder="Enter your message *" required>
+
+            <button #sendButton mat-stroked-button color="primary">Send</button>
+
+        </form>
+    </div>
+</div>

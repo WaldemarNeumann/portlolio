@@ -1,9 +1,24 @@
-<div class="header padding">
-    <img src="assets/img/cogwheel (1).png">
+<header id="home" class="header">
+    <img routerLink="/" href="#home" src="assets/img/cogwheel (1).png">
 
     <div class="neaderMenu">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT ME</a>
-        <a href="#">PORTFOLIO</a>
+        <a href="#home">HOME</a>
+        <a href="#about-me">ABOUT ME</a>
+        <a href="#portfolio">PORTFOLIO</a>
     </div>
-</div>
+
+    <div class="menu hide-desktop">
+        <img (click)="openMenu()" src="./assets/img/menu-4-32 (1).png">
+    </div>
+
+    <div *ngIf="mobile" [class.show-overlay-menu]="!isClicked" class="overlay-menu">
+        <div routerLinkActive="active">
+            <div (click)="closeMenu()" class="close">&times;</div>
+        </div>
+        <div class="bobileLinks">
+            <a (click)="closeMenu()" href="#home">HOME</a>
+            <a (click)="closeMenu()" href="#about-me">ABOUT ME</a>
+            <a (click)="closeMenu()" href="#portfolio">PORTFOLIO</a>
+        </div>
+    </div>
+</header>

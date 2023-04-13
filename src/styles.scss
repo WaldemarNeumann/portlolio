@@ -1,29 +1,9 @@
-body,
-html {
+body {
     font-family: 'Lato', sans-serif;
     margin: 0;
-    background-color: black;
+    background-color: white;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    // overflow-x: hidden;
-    height: 100%;
-    /* width */
-    //  ::-webkit-scrollbar {
-    //     width: 12px;
-    // }
-    // /* Track */
-    //  ::-webkit-scrollbar-track {
-    //     background: #f1f1f1;
-    // }
-    // /* Handle */
-    //  ::-webkit-scrollbar-thumb {
-    //     background: #2BBBAD;
-    //     border-radius: 10px;
-    // }
-    // /* Handle on hover */
-    //  ::-webkit-scrollbar-thumb:hover {
-    //     background: #2DFCD8;
-    // }
 }
 
 .body,
@@ -36,6 +16,14 @@ html::-webkit-scrollbar {
 .padding {
     padding-left: 100px;
     padding-right: 100px;
+    @media (max-width: 450px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media (max-width: 280px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .btnActiv {

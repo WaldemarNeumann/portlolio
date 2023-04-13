@@ -1,0 +1,102 @@
+.contact {
+    background-color: black;
+}
+
+.contactDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    @media (max-width: 730px) {
+        align-items: normal;
+    }
+    @media (max-width: 280px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+h1 {
+    color: #2DFCD8;
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 80px;
+    @media (max-width: 730px) {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    @media (max-width: 470px) {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+}
+
+h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -20px;
+    @media (max-width: 280px) {
+        font-size: 16px;
+    }
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+button {
+    width: 157px;
+    height: 60px;
+    color: #2DFCD8 !important;
+    border: 2px solid #2DFCD8 !important;
+    margin-bottom: 80px;
+    @media (max-width: 500px) {
+        width: 120px;
+        height: 40px;
+    }
+}
+
+.contactMail {
+    color: #2EFCD8;
+}
+
+.contactForm {
+    padding-right: 10px;
+    margin-top: 50px;
+    input {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 39px;
+        width: 612px;
+        background: #1A1A1A;
+        font-weight: 500;
+        font-size: 18px;
+        border: none;
+        text-align: left !important;
+        padding-left: 10px !important;
+        color: white;
+        @media (max-width: 730px) {
+            width: 100%;
+        }
+        &:focus {
+            outline: none !important;
+            border: 1px solid #2DFCD8;
+            box-shadow: 0 0 8px #32ffdd;
+        }
+    }
+    p {
+        margin-bottom: -15px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .message {
+        height: 179px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
