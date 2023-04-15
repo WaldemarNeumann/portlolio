@@ -48,7 +48,7 @@ export class MySkillsComponent implements OnInit {
     },
     {
       img: './assets/img/images.png',
-      title: 'Material Designe',
+      title: 'Material Design',
     }
 
     

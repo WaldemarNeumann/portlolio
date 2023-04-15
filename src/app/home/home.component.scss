@@ -65,6 +65,9 @@
 
 .homeText {
     color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
     @media (max-width: 900px) {
         display: flex;
         justify-content: center;

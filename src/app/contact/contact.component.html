@@ -15,10 +15,20 @@
             <input pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" matInput email="email" #emailField placeholder="Enter your Email address *" required>
 
             <p>Message</p>
-            <input matInput required type="text" message="message" #messageField class="message" placeholder="Enter your message *" required>
+            <!-- <input matInput type="text" message="message" #messageField class="message" placeholder="Enter your message *" required> -->
+
+
+            <textarea class="message" type="text" message="message" #messageField matInput required placeholder="Enter your messege *"></textarea>
+
 
             <button #sendButton mat-stroked-button color="primary">Send</button>
 
         </form>
+
+        <div class="snackbar-container d-none">
+            Mail versendet!
+        </div>
     </div>
+
+
 </div>

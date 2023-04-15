@@ -50,7 +50,9 @@ export class MyWorkComponent implements OnInit {
 
   projectsLinks = [
    'https://waldemar-neumann.developerakademie.net/EL_POLLO_LOCO/index.html',
-   'https://waldemar-neumann.developerakademie.net/gruppenarbeit%20join/index.html'
+   'https://waldemar-neumann.developerakademie.net/gruppenarbeit%20join/index.html',
+   'https://waldemar-neumann.developerakademie.net/portfolio/#portfolio',
+   'https://waldemar-neumann.developerakademie.net/pokedex/index.html'
   ];
 
 
@@ -58,6 +60,7 @@ export class MyWorkComponent implements OnInit {
     'https://github.com/WaldemarNeumann/El-Pollo-Loco',
     'https://github.com/WaldemarNeumann/gruppenarbeit-join',
     'https://github.com/WaldemarNeumann/portlolio',
+    'https://github.com/WaldemarNeumann/pokedex'
   ];
 
   openNewTab(y) {

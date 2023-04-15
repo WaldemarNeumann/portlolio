@@ -58,11 +58,15 @@ export class ContactComponent implements OnInit {
     }
     );
 
-    this.snackBar.open('Mail versendet', 'OK', {
-      duration: 3000, 
-    });
+    const snackbarContainer = document.querySelector('.snackbar-container') as HTMLElement;
+    snackbarContainer.classList.remove('d-none'); 
 
-    window.location.reload();
+    setTimeout(() => {
+      snackbarContainer.classList.add('d-none'); 
+   
+      window.location.reload();
+    }, 2000);
+
   }
 
 }

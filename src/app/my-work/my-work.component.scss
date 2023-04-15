@@ -69,6 +69,9 @@
 $verzoegerung: 700ms;
 .projekt-info {
     position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     top: 0;
     left: 0;
     right: 0;
@@ -76,6 +79,16 @@ $verzoegerung: 700ms;
     background-color: rgb(254, 254, 254, 0.9);
     opacity: 0;
     transition: opacity $verzoegerung;
+    padding-left: 50px;
+    padding-right: 50px;
+    @media (max-width: 470px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media (max-width: 420px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     &:hover {
         opacity: 1;
     }
@@ -86,15 +99,34 @@ $verzoegerung: 700ms;
         color: #FA2759;
         display: flex;
         justify-content: center;
+        @media (max-width: 470px) {
+            padding-top: 10px;
+        }
+        @media (max-width: 280px) {
+            font-size: 18px;
+        }
     }
     p {
-        padding-left: 50px;
-        padding-right: 20px;
         font-size: 18px;
         display: flex;
         justify-content: center;
         max-width: 420px;
+        @media (max-width: 470px) {
+            font-size: 14px;
+        }
+        @media (max-width: 390px) {
+            font-size: 12px;
+        }
+        @media (max-width: 280px) {
+            font-size: 9px;
+        }
     }
+}
+
+.project-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     button {
         height: 50px;
         width: 120px;
@@ -104,6 +136,22 @@ $verzoegerung: 700ms;
         position: absolute;
         bottom: 20px;
         right: 50px;
+        @media (max-width: 470px) {
+            height: 40px;
+            width: 100px;
+            right: 30px;
+        }
+        @media (max-width: 420px) {
+            height: 40px;
+            width: 100px;
+            right: 10px;
+        }
+        @media (max-width: 280px) {
+            font-size: 9px;
+            height: 23px;
+            width: 60px;
+            bottom: 7px;
+        }
         &:hover {
             background-color: #FA2759;
             color: white;
@@ -111,11 +159,10 @@ $verzoegerung: 700ms;
     }
 }
 
-.project-btn {
-    display: flex;
-}
-
 .git {
     position: absolute;
-    left: 50px;
+    left: 30px;
+    @media (max-width: 420px) {
+        left: 10px;
+    }
 }
