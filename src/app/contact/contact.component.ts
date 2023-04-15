@@ -14,7 +14,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
@@ -30,43 +31,45 @@ export class ContactComponent implements OnInit {
   names2: string = '';
   names3: string = ''; 
 
-  async sendMail(){
+  async sendMail() {
     console.log('Sending mail', this.myForm);
-    
+  
     let nameField = this.nameField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let emailField = this.emailField.nativeElement;
     let sendButton = this.sendButton._elementRef.nativeElement;
-      nameField.disabled = true;
-      messageField.disabled = true;
-      emailField.disabled = true;
-      sendButton.disabled = true;
+    
+    nameField.disabled = true;
+    messageField.disabled = true;
+    emailField.disabled = true;
+    sendButton.disabled = true;
+  
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('message', messageField.value);
     fd.append('email', emailField.value);
-
+  
     this.send = !this.send;
-
+  
     //send
-    await fetch('https://waldemar-neumann.developerakademie.net/send-mail/send_mail.php',
-    
-    {
-     method : 'POST',
-     body: fd,
-     mode: 'no-cors'
-    }
-    );
-
+    await fetch('https://waldemar-neumann.developerakademie.net/send-mail/send_mail.php', {
+      method: 'POST',
+      body: fd,
+      mode: 'no-cors'
+    });
+  
     const snackbarContainer = document.querySelector('.snackbar-container') as HTMLElement;
-    snackbarContainer.classList.remove('d-none'); 
-
+    snackbarContainer.classList.remove('d-none');
+  
     setTimeout(() => {
-      snackbarContainer.classList.add('d-none'); 
-   
-      window.location.reload();
+      snackbarContainer.classList.add('d-none');
+      this.myForm.nativeElement.reset();
+      nameField.disabled = false;
+      messageField.disabled = false;
+      emailField.disabled = false;
+      sendButton.disabled = false;
     }, 2000);
-
   }
+  
 
 }

@@ -11,10 +11,14 @@ export class MySkillsComponent implements OnInit {
   skills = [
     {
       img: './assets/img/html-css.png',
-      title: 'HTML/CSS',
+      title: 'CSS',
     },
     {
-      img: './assets/img/java script.png',
+      img: './assets/img/html.png',
+      title: 'HTML',
+    },
+    {
+      img: './assets/img/javaScript.png',
       title: 'JavaScript',
     },
     {
