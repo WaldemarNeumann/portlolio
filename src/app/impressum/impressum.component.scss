@@ -3,8 +3,9 @@
     color: white;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 9px;
+    padding-bottom: 128px;
+    height: calc(100vh - 377px);
     @media (max-width: 420px) {
         padding-left: 25px;
         padding-right: 25px;

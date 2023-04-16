@@ -18,7 +18,7 @@ export class MySkillsComponent implements OnInit {
       title: 'HTML',
     },
     {
-      img: './assets/img/javaScript.png',
+      img: './assets/img/javascript.png',
       title: 'JavaScript',
     },
     {
