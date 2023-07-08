@@ -50,7 +50,8 @@ import { ProjectsComponent } from './projects/projects.component';
     MatButtonModule, 
     MatMenuModule,
     MatSnackBarModule,
-    MatIconModule
+    MatIconModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

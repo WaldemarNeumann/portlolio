@@ -29,19 +29,13 @@ export class MyWorkComponent implements OnInit {
       p: 'The board gives an overview over the current tasks in a project by showing the status, assignments and other information.' 
     }, 
 
-    {path: 'portfolio.jpg', 
+    {path: 'slack-clone.jpg', 
       tag: 'angular', 
-      title: 'Portfolio', 
+      title: 'Slack-Clone', 
       description: 'This page was build with Angular.', 
       p: 'Get to know me and my projects.'
     },
 
-    {path: 'pokedex.jpg', 
-      tag: 'javascript', 
-      title: 'Pokedex', 
-      description: 'Display information using JavaScript and API.', 
-      p: 'Create an overview of all Pokemons.'
-    }
   ];
 
   getallProjectPictures(): object[]{
@@ -49,18 +43,18 @@ export class MyWorkComponent implements OnInit {
   }
 
   projectsLinks = [
-   'https://waldemar-neumann.developerakademie.net/EL_POLLO_LOCO/index.html',
-   'https://waldemar-neumann.developerakademie.net/gruppenarbeit%20join/index.html',
-   'https://waldemar-neumann.developerakademie.net/portfolio/#portfolio',
-   'https://waldemar-neumann.developerakademie.net/pokedex/index.html'
+   'http://el-pollo-loco.waldemar-neumann.de/',
+   'http://join.waldemar-neumann.de/',
+   'http://slack-clone.waldemar-neumann.de/',
+ 
   ];
 
 
   gitLinks = [
     'https://github.com/WaldemarNeumann/El-Pollo-Loco',
     'https://github.com/WaldemarNeumann/gruppenarbeit-join',
-    'https://github.com/WaldemarNeumann/portlolio',
-    'https://github.com/WaldemarNeumann/pokedex'
+    'https://github.com/WaldemarNeumann/Slack-Clone',
+ 
   ];
 
   openNewTab(y) {

@@ -19,6 +19,7 @@
         width: 55px;
         height: 55px;
         cursor: pointer;
+        margin-top: 45px;
         @media (max-width: 280px) {
             width: 45px;
             height: 45px;
@@ -30,7 +31,7 @@
     display: none;
 }
 
-.neaderMenu {
+.headerMenu {
     @media (max-width: 900px) {
         display: none;
     }
